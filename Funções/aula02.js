@@ -59,5 +59,5 @@ funcao(2, undefined, 20);*/
     console.log(acumulador);
    }
 
-   conta( '*', 1, 20,30,40,50);
+   conta( '*', 1, 20,30,);
    
