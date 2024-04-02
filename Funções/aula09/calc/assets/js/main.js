@@ -1,3 +1,5 @@
+// CALCULADORA COM FACTORY FUNCTIONS
+
 function criaCalculadora() {
   
   return {
@@ -53,6 +55,7 @@ function criaCalculadora() {
         if(el.classList.contains('btn-num')) 
         {
           this.btnParaDisplay(el.innerText);
+          
   }
         if(el.classList.contains('btn-clear')){
           this.clearDisplay();
