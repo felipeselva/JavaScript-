@@ -3,7 +3,7 @@
 function Produto(nome,preco,estoque) {
     this.nome = nome;
     this.preco=preco;
-    this.estoque =estoque;
+   
     
     let estoqueprivado = estoque;
     Object.defineProperty(this, 'estoque', {
