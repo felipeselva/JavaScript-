@@ -54,7 +54,12 @@ Contato.prototype.cleanUp = function() {
 }
 
 
-
+Contato.prototype.edit = async function(id) {
+  if(typeof id !== 'string') return;
+  this.valida();
+  if(this.erros.length > 0) return;
+  this.contato = await ContatoModel.findByIdAndUpdate(id, this.body, {new: true});
+}
 
    
 
